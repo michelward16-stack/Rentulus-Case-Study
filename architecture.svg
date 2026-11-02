@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1C2127"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C7861F"/>
+    </marker>
+    <style>
+      .box{fill:#FFFFFF;stroke:#1C2127;stroke-width:2}
+      .dark{fill:#1C2127}
+      .gold{fill:#FDF3E2;stroke:#E8A33D;stroke-width:2.5}
+      .h{font-family:'Space Grotesk',Inter,sans-serif;font-weight:600;font-size:22px;fill:#1C2127}
+      .hw{font-family:'Space Grotesk',Inter,sans-serif;font-weight:600;font-size:22px;fill:#FAF7F1}
+      .s{font-size:15px;fill:#4A525C}
+      .sw{font-size:15px;fill:#C9CED4}
+      .lbl{font-size:14px;fill:#1C2127}
+      .glbl{font-size:14px;fill:#8A5A0E;font-weight:600}
+      .mod{fill:#2A3139;stroke:#3A434D;stroke-width:1}
+      .modt{font-size:14px;fill:#FAF7F1}
+      .line{stroke:#1C2127;stroke-width:1.8;fill:none}
+      .pay{stroke:#C7861F;stroke-width:2.6;fill:none}
+      .num{fill:#E8A33D}
+      .numt{font-size:13px;font-weight:700;fill:#1C2127}
+    </style>
+  </defs>
+
+  <rect width="1600" height="1010" fill="#FAF7F1"/>
+
+  <!-- Title -->
+  <text x="60" y="70" font-family="'Space Grotesk',Inter,sans-serif" font-weight="600" font-size="34" fill="#1C2127">Rentulus architecture</text>
+  <text x="60" y="102" class="s">Multi-tenant SaaS for Brazilian property agencies · pnpm monorepo · every row scoped by accountId</text>
+
+  <!-- Agency staff -->
+  <rect x="60" y="330" width="200" height="120" rx="14" class="box"/>
+  <text x="160" y="380" text-anchor="middle" class="h">Agency staff</text>
+  <text x="160" y="406" text-anchor="middle" class="s">browser</text>
+
+  <!-- Web app -->
+  <rect x="330" y="270" width="290" height="240" rx="14" class="box"/>
+  <text x="352" y="308" class="h">Web app</text>
+  <text x="352" y="336" class="s">Next.js 14 App Router</text>
+  <text x="352" y="360" class="s">Tailwind CSS · shadcn/ui</text>
+  <text x="352" y="384" class="s">TanStack Query (cache and</text>
+  <text x="352" y="406" class="s">cross-module invalidation)</text>
+  <text x="352" y="440" class="s">Painel · Imóveis · Contratos</text>
+  <text x="352" y="462" class="s">Financeiro · Manutenção</text>
+  <text x="352" y="484" class="s">Mensagens · Configurações</text>
+
+  <!-- Supabase Auth -->
+  <rect x="330" y="610" width="290" height="110" rx="14" class="box"/>
+  <text x="352" y="648" class="h">Supabase Auth</text>
+  <text x="352" y="676" class="s">email and password · issues JWT</text>
+  <text x="352" y="698" class="s">user id = account id (1 to 1)</text>
+
+  <!-- API -->
+  <rect x="700" y="190" width="420" height="480" rx="14" class="dark"/>
+  <text x="724" y="230" class="hw">API</text>
+  <text x="724" y="256" class="sw">Fastify 4 · TypeScript · Zod · 60+ REST endpoints</text>
+
+  <rect x="724" y="278" width="180" height="44" rx="8" class="mod"/><text x="814" y="306" text-anchor="middle" class="modt">Leases</text>
+  <rect x="916" y="278" width="180" height="44" rx="8" class="mod"/><text x="1006" y="306" text-anchor="middle" class="modt">Charges and payouts</text>
+  <rect x="724" y="332" width="180" height="44" rx="8" class="mod"/><text x="814" y="360" text-anchor="middle" class="modt">Maintenance</text>
+  <rect x="916" y="332" width="180" height="44" rx="8" class="mod"/><text x="1006" y="360" text-anchor="middle" class="modt">Messages</text>
+  <rect x="724" y="386" width="180" height="44" rx="8" class="mod"/><text x="814" y="414" text-anchor="middle" class="modt">Reports (DIMOB)</text>
+  <rect x="916" y="386" width="180" height="44" rx="8" class="mod"/><text x="1006" y="414" text-anchor="middle" class="modt">Dashboard summary</text>
+
+  <text x="724" y="466" class="sw">Domain rules (pure functions)</text>
+  <rect x="724" y="478" width="372" height="40" rx="8" class="mod"/>
+  <text x="740" y="503" class="modt">Late fees · Lei 8.245/91 repair responsibility</text>
+
+  <text x="724" y="548" class="sw">Integrations</text>
+  <rect x="724" y="560" width="180" height="84" rx="8" fill="#3A2E19" stroke="#E8A33D" stroke-width="1.5"/>
+  <text x="814" y="594" text-anchor="middle" class="modt">/webhooks/asaas</text>
+  <text x="814" y="616" text-anchor="middle" font-size="13" fill="#E8C68C">token check · idempotent</text>
+  <rect x="916" y="560" width="180" height="84" rx="8" fill="#3A2E19" stroke="#E8A33D" stroke-width="1.5"/>
+  <text x="1006" y="594" text-anchor="middle" class="modt">Asaas client</text>
+  <text x="1006" y="616" text-anchor="middle" font-size="13" fill="#E8C68C">customers · charges</text>
+
+  <!-- Database -->
+  <rect x="700" y="800" width="420" height="150" rx="14" class="box"/>
+  <text x="724" y="838" class="h">PostgreSQL (Supabase)</text>
+  <text x="724" y="866" class="s">Prisma 5 · 15+ models · money in centavos, rates in bps</text>
+  <text x="724" y="890" class="s">accounts · properties · units · leases · tenants</text>
+  <text x="724" y="912" class="s">transactions · owner payouts · work orders</text>
+  <text x="724" y="936" class="s">trigger: new auth user → account + admin user</text>
+
+  <!-- Asaas -->
+  <rect x="1200" y="300" width="340" height="170" rx="14" class="gold"/>
+  <text x="1224" y="340" class="h">Asaas</text>
+  <text x="1224" y="366" class="s">Brazilian payments API</text>
+  <text x="1224" y="394" class="s">boleto with PIX QR code</text>
+  <text x="1224" y="418" class="s">customer per tenant (by CPF)</text>
+  <text x="1224" y="442" class="s">events: received · overdue</text>
+
+  <!-- Tenant -->
+  <rect x="1200" y="770" width="340" height="110" rx="14" class="box"/>
+  <text x="1224" y="810" class="h">Tenant (inquilino)</text>
+  <text x="1224" y="838" class="s">pays from any bank app</text>
+  <text x="1224" y="860" class="s">gets the link from the agency</text>
+
+  <!-- Plain arrows -->
+  <path d="M260,390 L326,390" class="line" marker-end="url(#a)"/>
+  <path d="M620,360 L696,360" class="line" marker-end="url(#a)"/>
+  <text x="628" y="346" class="lbl">REST</text>
+  <text x="628" y="382" class="lbl">+ JWT</text>
+  <path d="M475,510 L475,606" class="line" marker-end="url(#a)"/>
+  <text x="485" y="564" class="lbl">sign in</text>
+  <path d="M620,665 L696,640" class="line" marker-end="url(#a)"/>
+  <text x="624" y="700" class="lbl">verify JWT</text>
+  <path d="M475,720 L475,880 L696,880" class="line" marker-end="url(#a)"/>
+  <text x="488" y="866" class="lbl">sync trigger</text>
+  <path d="M740,670 L740,796" class="line" marker-end="url(#a)"/>
+  <text x="730" y="760" class="lbl" text-anchor="end">Prisma</text>
+
+  <!-- Payment flow (gold) -->
+  <path d="M1096,600 L1160,600 L1160,420 L1196,420" class="pay" marker-end="url(#g)"/>
+  <circle cx="1160" cy="510" r="13" class="num"/><text x="1160" y="515" text-anchor="middle" class="numt">1</text>
+  <text x="1180" y="515" class="glbl">create charge</text>
+
+  <path d="M1420,766 L1420,474" class="pay" marker-end="url(#g)"/>
+  <circle cx="1420" cy="600" r="13" class="num"/><text x="1420" y="605" text-anchor="middle" class="numt">2</text>
+  <text x="1440" y="605" class="glbl">pays</text>
+
+  <path d="M1320,470 L1320,700 L880,700 L880,648" class="pay" marker-end="url(#g)"/>
+  <circle cx="1100" cy="700" r="13" class="num"/><text x="1100" y="705" text-anchor="middle" class="numt">3</text>
+  <text x="1100" y="728" class="glbl" text-anchor="middle">webhook: payment received</text>
+
+  <path d="M800,644 L800,796" class="pay" marker-end="url(#g)"/>
+  <circle cx="800" cy="760" r="13" class="num"/><text x="800" y="765" text-anchor="middle" class="numt">4</text>
+  <text x="820" y="758" class="glbl">mark paid</text>
+  <text x="820" y="776" class="glbl">+ owner payout</text>
+
+  <!-- Legend -->
+  <line x1="60" y1="980" x2="100" y2="980" class="pay"/>
+  <text x="110" y="985" class="lbl">rent collection flow, no manual reconciliation</text>
+  <line x1="470" y1="980" x2="510" y2="980" class="line"/>
+  <text x="520" y="985" class="lbl">request / data</text>
+</svg>
